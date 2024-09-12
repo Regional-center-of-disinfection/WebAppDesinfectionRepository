@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,700&display=swap');
+@import "_vars.scss";
+
+
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #242b33; /* Використання змінної для фону */
+    color: #D4C17F;
+}
