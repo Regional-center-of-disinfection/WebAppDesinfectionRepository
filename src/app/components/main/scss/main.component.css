@@ -1,0 +1,116 @@
+/*изменять или обнулять CSS свойства элементов*/
+@import "base/_reset.css";
+/*змінні*/
+@import "base/_vars.scss";
+/*основні стилі*/
+@import "base/_base.css";
+
+.header {
+    background-color: #171414FF; /* Темний фон */
+    padding: 25px 125px; /* Збільшення висоти панелі */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Забороняємо стискання логотипа */
+}
+
+.logo img {
+    width: 100px; /* Корегування ширини логотипа */
+    height: auto;
+    margin-right: 20px;
+
+}
+
+.logo-text {
+    font-size: 1.25rem; /* Розмір тексту */
+    font-family: 'Raleway', sans-serif; /* Шрифт */
+    font-weight: bold;
+    color: #D4C17F; /* Білий колір для тексту */
+    border-left: 1px solid #fff; /* Вертикальна лінія як на зображенні */
+    padding-left: 15px; /* Відступ після лінії */
+    flex-direction: column; /* Вирівнюємо текст по вертикалі */
+    display: flex;
+}
+
+a.logo-link:hover .logo-text {
+    text-decoration: none; /* Забороняємо підкреслення при наведенні */
+}
+
+.nav {
+    margin-left: 90px;
+    display: flex;
+    font-size: 1rem; /* Збільшення розміру шрифту меню */
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 90px; /* Відстань між пунктами меню */
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif; /* Інший шрифт */
+}
+
+.header__contacts {
+    margin-left: auto;
+}
+
+.phone {
+    color: #D4C17F; /* Жовтий колір */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; /* Розмір номера телефону */
+    font-family: 'Arial', serif;
+    white-space: nowrap; /* Забороняємо перенесення номера */
+}
+
+.language-switcher {
+    margin-left: auto;
+    display: flex;
+}
+
+.language-switcher__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.language-switcher__link--active {
+    background-color: #D4C17F; /* Жовтий фон для активної мови */
+    color: #222;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 15px 30px; /* Менші відступи для менших екранів */
+    }
+}
+
+@media (max-width: 600px) {
+    .nav, .phone, .language-switcher {
+        font-size: 0.75rem;
+    }
+}
