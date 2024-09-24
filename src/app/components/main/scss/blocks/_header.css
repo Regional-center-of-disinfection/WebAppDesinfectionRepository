@@ -1,10 +1,3 @@
-/*изменять или обнулять CSS свойства элементов*/
-@import "base/_reset.css";
-/*змінні*/
-@import "base/_vars.scss";
-/*основні стилі*/
-@import "base/_base.css";
-
 .header {
     background-color: #171414FF; /* Темний фон */
     padding: 25px 125px; /* Збільшення висоти панелі */
