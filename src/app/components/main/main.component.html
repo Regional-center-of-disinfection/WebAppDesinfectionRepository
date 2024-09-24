@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>ОБЛАСНИЙ ЦЕНТР ДЕЗІНФЕКЦІЇ ТА ГІГІЄНИ</title>
-    <link rel="stylesheet" href="scss/main.component.css">
+    <link rel="stylesheet" href="../main/scss/main.css">
 </head>
-
 <body>
 <header class="header">
     <div class="container">
         <div class="header__content">
             <!-- Логотип компанії -->
             <a href="/" class="logo">
-                <img src="./img/logo.png" alt="Disinfection">
+                <img src="img/logo/logo.png" alt="Disinfection">
                 <div class="logo-text">
                     <span>Знищення</span>
                     <span>шкідників</span>
@@ -22,16 +21,33 @@
             <!-- Головне меню -->
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item">
+                    <li class="nav__item nav__dropdown">
                         <a href="#" class="nav__link">Дезінсекція</a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#">Знищення тарганів</a></li>
+                            <li><a href="#">Знищення клопів</a></li>
+                            <li><a href="#">Знищення бліх</a></li>
+                            <li><a href="#">Знищення кліщів</a></li>
+                            <li><a href="#">Знищення мурах</a></li>
+                            <li><a href="#">Знищення ос</a></li>
+                            <li><a href="#">Знищення молі</a></li>
+                            <li><a href="#">Статті</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item nav__dropdown">
                         <a href="#" class="nav__link">Дератизація</a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#">Знищення щурів</a></li>
+                            <li><a href="#">Знищення мишей</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item nav__dropdown">
                         <a href="#" class="nav__link">Дезінфекція</a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#">Боротьба з грибком</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item nav__dropdown">
                         <a href="#" class="nav__link">B2B</a>
                     </li>
                 </ul>
@@ -53,5 +69,16 @@
     </div>
 </header>
 <h1>Дезинфекція</h1>
+<a href="#">Link</a>
+<div class="header_title">
+    <div class="container">
+        TITLE
+    </div>
+</div>
+<div class="header_footer">
+    <div class="container">
+        Address
+    </div>
+</div>
 </body>
 </html>
