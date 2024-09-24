@@ -1,0 +1,9 @@
+/*изменять или обнулять CSS свойства элементов*/
+@import "../scss/base/_reset.css";
+/*змінні*/
+@import "../scss/base/_vars.scss";
+/*основні стилі*/
+@import "../scss/base/_base.css";
+
+@import "blocks/_header.css";
+@import "blocks/_body.css";
